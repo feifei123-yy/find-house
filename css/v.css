@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+body {
+    background: #F5F5F5;
+}
+/* 头部的图片的部分 */
+.head{
+    width: 100%;
+    height: 4rem;
+    background: #ff8a00;
+    display: flex;
+    align-items: center;
+    padding: 0.4rem 3rem 0 3rem;
+    box-sizing: border-box;
+}
+.head img:nth-child(1){
+    height: 75%;
+}
+.head img:nth-child(2){
+    height: 75%;
+    margin-left: 11rem;
+}
+.head img:nth-child(3){
+    height: 75%;
+    margin-left: 1rem;
+}
+
+/* head-top */
+.head-top{
+    width: 100%;
+    height: 4rem;
+    line-height: 4rem;
+    border-bottom: .1rem solid #ccc;
+    background-color: white;
+}
+.head-top span:nth-child(1){
+    margin-left: 1rem;
+    font-size:1rem;
+    color: black;
+    font-weight: bolder;
+}
+
+/* 普通登录与验证码登录 */
+.btn{
+    width: 100%;
+    height: 5rem;
+    background-color: white;
+    text-align: center;
+    line-height: 5rem;
+    display: flex;
+}
+.btn>li{
+    width: 50%;
+}
+
+/* 普通登录底部的边框线*/
+.active{
+    border-bottom: 0.4rem solid #ff8a00;
+    box-sizing: border-box;
+}
+
+/* 验证码快捷登录的底部的下滑线*/
+.btn>li:nth-child(2){
+    border-bottom: 0.4rem solid #ccc;
+    box-sizing: border-box;
+}
+/* 请输入手机号和密码 */
+.carrd{
+    width: 100%;
+}
+.list{
+    width: 100%;
+    /* height: ; */
+}
+.list>li{
+    /* padding: 0.4rem; */
+    width: 100%;
+    height:4.2rem ;
+    background-color: white;
+    border-bottom:.1rem solid #ccc ;
+    position: relative;
+}
+.list>li>input{
+    width: 100%;
+    padding: 1.3rem;
+    box-sizing: border-box;
+    border: 0;
+    outline: none;
+    /* position: relative; */
+}
+/* 登录按钮 */
+.list>.btn2{
+    background-color: #ff8a00;
+    width: 30rem;
+    height: 5rem;
+    color: white;
+    margin: 1.2rem 1.2rem;
+    outline: none;
+    border: 0;
+}
+ol{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: pink; */
+    padding: 1rem;
+    box-sizing: border-box;
+}
+ol li:nth-child(1)>a{
+    color: #ff8a00;
+}
+.list>li>.btn1{
+    width: 8rem;
+    height: 3.2rem;
+    color: black;
+    background: white;
+    outline: none;
+    /* border: .1rem solid #ccc; */
+    position: absolute;
+    top: 0.5rem;
+    left: 20rem;
+}

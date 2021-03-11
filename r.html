@@ -1,0 +1,86 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-03-10 11:57:55
+ * @LastEditTime: 2021-03-10 14:45:16
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \找房无忧e:\作业131\我的找房无忧\r.html
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+    <link rel="stylesheet" href="./css/r.css">
+   
+</head>
+
+<body>
+<div class="head">
+    <img src="./image/index/logo.jpg" alt="">
+    <img src="./image/my/my.jpg" alt="">
+    <img src="./image/my/xiazai.jpg" alt="">
+</div>
+<!-- 第二行 -->
+<div class="head-top">
+    <span>首页</span>
+    <span>>我的</span>
+    <span>>注册</span>
+</div>
+<!-- 请输入 -->
+<ul class="list">
+    <li>
+        <input type="text" placeholder="请输入手机号码 "> 
+       
+    </li>
+    <li>
+        <input type="password" placeholder="请输入短信中的验证码">
+        <button class="  btn1">发送验证码</button>
+    </li>
+    <li>
+        <input type="password" placeholder="请输入新密码">
+    </li>
+    <button type="button" class="btn">立即注册</button>
+</ul>
+
+    <script src="./js/zepto.js"></script>
+    <script src="./js/touch.js"></script>
+    <script>
+        function setRem() {
+        var windw = document.documentElement.clientWidth || document.body.clientWidth;
+        var uiw = 320;
+        document.documentElement.style.fontSize = (windw / uiw) * 10 + 'px'
+    }
+    setRem();
+    window.onresize = setRem;
+
+
+    //倒计时效果
+    var num=59;
+    var timer=null;
+    $('.btn1').tap(function(){
+        
+    });
+
+
+
+
+
+
+
+
+
+
+
+    // 点击橙色按钮跳转到v.html
+  $('.btn').on('click',function(){
+      location='./v.html'
+  })
+
+    </script>
+</body>
+
+</html>

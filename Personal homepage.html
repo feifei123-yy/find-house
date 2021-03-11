@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/Personal homepage.css">
+</head>
+
+<body>
+    <div class="head">
+        <img src="./image/index/logo.jpg" alt="">
+        <img src="./image/my/my.jpg" alt="">
+        <img src="./image/my/xiazai.jpg" alt="">
+    </div>
+    <div class="head-top">
+        <span>首页</span>
+        <span>>我的</span>
+    </div>
+    <div class="logo">
+        <div class="logo-box">
+            <img src="./素材/image/my/urse2.png" alt="">
+            <p>欢迎你，18686868686</p>
+        </div>
+    </div>
+    <ul class="list">
+        <li>
+            <span>我关注的房源</span>
+            <img src=" ./image/my/right.png " class="right ">
+        </li>
+        <li>
+            <span>我关注的小区</span>
+            <img src="./image/my/right.png " class="right ">
+        </li>
+        <li>
+            <span>我的看房记录</span>
+            <img src="./image/my/right.png " class="right ">
+        </li>
+        <button>退出登录</button>
+    </ul>
+</body>
+<script src="./js/zepto.js"></script>
+<script>
+    function setRem() {
+        var windw = document.documentElement.clientWidth || document.body.clientWidth;
+        var uiw = 320;
+        document.documentElement.style.fontSize = (windw / uiw) * 10 + 'px'
+    }
+    setRem();
+    window.onresize = setRem;
+    $("button").on("click", function() {
+        location = "login.html"
+    })
+</script>
+<html>

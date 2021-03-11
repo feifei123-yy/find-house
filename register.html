@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/register.css">
+    <script src="./js/zepto.js"></script>
+    <script src="./js/touch.js"></script>
+</head>
+
+<body>
+    <div class="head">
+        <img src="./image/index/logo.jpg" alt="">
+        <img src="./image/my/my.jpg" alt="">
+        <img src="./image/my/xiazai.jpg" alt="">
+    </div>
+    <div class="head-top">
+        <span>首页</span>
+        <span>>我的</span>
+        <span>>注册</span>
+    </div>
+    <ul class="list">
+        <li>
+            <input type="text" placeholder="请输入手机号码">
+        </li>
+        <li>
+            <input type="text" placeholder="请输入短信中的验证码">
+            <button class="btn1">发送验证码</button>
+        </li>
+        <li>
+            <input type="text" placeholder="请输入新密码">
+        </li>
+    </ul>
+    <button type="button" class="btn">立即注册</button>
+</body>
+
+<script>
+    function setRem() {
+        var windw = document.documentElement.clientWidth || document.body.clientWidth;
+        var uiw = 320;
+        document.documentElement.style.fontSize = (windw / uiw) * 10 + 'px'
+    }
+    setRem();
+    window.onresize = setRem;
+
+    var num = 59;
+    var timer = null;
+    $(".btn1").tap(function() {
+        $(".btn1").css("pointerEvents", "none");
+        timer = setInterval(function() {
+            if (num >= 0) {
+                $(".btn1").css("color", "#ccc");
+                $(".btn1").text(num + '秒后重新发送');
+                num--;
+            } else {
+                $(".btn1").css("color", "black")
+                $(".btn1").text('重新发送');
+                $(".btn1").css('pointerEvents', "auto");
+                clearInterval(timer);
+                num = 59;
+            }
+        }, 1000)
+    });
+    $(".btn").on("click", function() {
+        location = "verification .html"
+    })
+</script>
+
+</html>

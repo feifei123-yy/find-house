@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/renting.css">
+    <script type="text/javascript" src="https://api.map.baidu.com/api?v=1.0&type=webgl&ak=xQNCeEmWgdmvZc74d38s2IzxkeMFVdUR"></script>
+</head>
+
+<body>
+    <div class="head">
+        <img src="./image/index/logo.jpg" alt="">
+        <img src="./image/my/my.jpg" alt="">
+        <img src="./image/my/xiazai.jpg" alt="">
+    </div>
+    <div class="head-top">
+        <span>首页</span>
+        <span>>北京租房</span>
+        <span>>房源信息</span>
+    </div>
+    <div class="pig">
+        <img src="./image/rentalList/banner.png" alt="">
+    </div>
+    <div class="tb">分享</div>
+    <div class="xiaoxi">
+        <div class="left">
+            天鹅湾小区精装两居，满五唯一，业主换房急售
+        </div>
+        <div class="right">
+            <img src="./image/rentalList/xin.png" alt="">
+            <span>关注</span>
+        </div>
+    </div>
+    <ul class="list">
+        <li>
+            <span>租金</span>
+            <span>2300元/月</span>
+        </li>
+        <li>
+            <span>房型</span>
+            <span>2室1厅</span>
+        </li>
+        <li>
+            <span>面积</span>
+            <span>204平米</span>
+        </li>
+    </ul>
+    <ul class="list1">
+        <li>
+            <span>楼层：高楼/17层</span>
+            <span>朝向：南北</span>
+        </li>
+        <li>
+            <span>装修：精装</span>
+            <span>供暖：集体供暖</span>
+        </li>
+        <li>
+            <span>年代：2007年</span>
+            <span>模型：板楼</span>
+        </li>
+    </ul>
+    <ul class="list2">
+        <li>
+            <div class="fangping">
+                <span>经纪人房评</span>
+                <img src="./image/my/right.png" alt="">
+            </div>
+
+        </li>
+        <li>
+            地理位置:晶都国际处于酒仙桥中心地带，毗邻北京 三大商圈， 紧邻丽都商圈，隔四环与望京商圈相望， 西南紧挨燕莎商圈， 地理位置优越。周边配套:硕堤 港商业中心，兆维大厦.
+        </li>
+    </ul>
+    <ul class="list3">
+        <li>
+            <span>看房客户记录</span>
+            <img src="./image/my/right.png" alt="">
+        </li>
+        <li>
+            <span>近一个月新增0位看房客户，共50位</span>
+        </li>
+    </ul>
+    <div class="map">
+        <p class="map-title">位置及周边</p>
+        <div class="map-art" id="container"></div>
+    </div>
+    <ul class="lias">
+        <li>
+            <span>小区成交历史</span>
+            <img src="./image/my/right.png" alt="">
+        </li>
+        <li>
+            <span>3室2厅，146平米，
+                <span class="ma">5000元</span>
+            </span>
+        </li>
+        <li>
+            <span>签约日期：2015-02-26</span>
+        </li>
+    </ul>
+    <ul class="lianxi">
+        <li>
+            <img src="./image/rentalList/man.png" alt="">
+        </li>
+        <li>
+            <span>张三</span>
+            <span>4001581855车专0008</span>
+        </li>
+        <li>
+            <img src="./image/rentalList/icon1.png" alt="">
+            <span>致电</span>
+        </li>
+        <li>
+            <img src="./image/rentalList/icon2.png" alt="">
+            <span>短信</span>
+        </li>
+    </ul>
+    <!-- 尾部 -->
+    <footer class="footer">
+        <p class="footer-title">北京找房无忧 > 首页</p>
+        <div class="foot-center">
+            <div class="foot-box">
+                <img src="./image/index/apple.png" alt="" class="left">
+                <div class="right">
+                    <p>iPhone</p>
+                    <p>客户端</p>
+                </div>
+            </div>
+            <div class="foot-box">
+                <img src="./image/index/android.png" alt="" class="left">
+                <div class="right">
+                    <p>Android</p>
+                    <p>客户端</p>
+                </div>
+            </div>
+        </div>
+        <div class="foot-bot">
+            <p>北京找房无忧房地产经纪公司</p>
+            <p>网络经营许可证京ICP备20160812号</p>
+        </div>
+    </footer>
+</body>
+<script type="text/javascript">
+    var map = new BMapGL.Map("container");
+    // 创建地图实例 
+    var point = new BMapGL.Point(116.404, 39.915);
+    // 创建点坐标 
+    map.centerAndZoom(point, 15);
+    // 初始化地图，设置中心点坐标和地图级别
+</script>
+<script src="./js/swiper-bundle.min.js"></script>
+<script>
+    var swiper1 = new Swiper('.swiper-container', {
+        autoplay: {
+            delay: 3000,
+        },
+        effect: 'slide',
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'fraction'
+        },
+    })
+
+    function setRem() {
+        var windw = document.documentElement.clientWidth || document.body.clientWidth;
+        var uiw = 320;
+        document.documentElement.style.fontSize = (windw / uiw) * 10 + 'px'
+    }
+    setRem();
+    window.onresize = setRem;
+</script>
+<html>

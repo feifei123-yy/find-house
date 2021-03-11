@@ -1,0 +1,106 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    ul,
+    ol {
+        list-style: none;
+    }
+    
+    html {
+        font-size: 10px;
+    }
+    
+    .clearfix:after {
+        clear: both;
+        content: "";
+        display: block;
+        font-size: 0;
+        height: 0;
+        visibility: hidden;
+    }
+    
+    body {
+        background: #F5F5F5;
+    }
+    
+    .head {
+        width: 100%;
+        height: 4rem;
+        background: #ff8a00;
+        box-sizing: border-box;
+        padding: 0.4rem 3rem 0 3rem;
+    }
+    
+    .head img:nth-of-type(1) {
+        height: 80%;
+    }
+    
+    .head img:nth-of-type(2) {
+        height: 80%;
+        margin-left: 11rem;
+    }
+    
+    .head img:nth-of-type(3) {
+        height: 80%;
+        margin-left: 1rem;
+    }
+    
+    .head-top {
+        width: 100%;
+        height: 4rem;
+        background: white;
+        line-height: 4rem;
+        border-bottom: .1rem solid #ccc;
+    }
+    
+    .head-top span:nth-child(1) {
+        margin-left: 1rem;
+        font-size: 1.1rem;
+        color: black;
+        font-weight: bolder;
+    }
+    
+    .list {
+        width: 100%;
+        height: 13.4rem;
+    }
+    
+    .list>li {
+        width: 100%;
+        height: 4.3rem;
+        background: white;
+        border-bottom: .1rem solid #ccc;
+    }
+    
+    .list>li input {
+        width: 43%;
+        padding: 1.3rem;
+        border: 0;
+        outline: none;
+    }
+    
+    .list>li button {
+        width: 10.4rem;
+        height: 2.5rem;
+        margin-left: 4rem;
+        color: black;
+        background: #FFFFFF;
+        outline: none;
+        border: .1rem solid #ccc;
+    }
+    
+    .btn {
+        padding: 1rem 10.2rem;
+        margin: 1rem 1.9rem;
+        background: #FF8A00;
+        color: white;
+        outline: none;
+        border: .1rem solid #ccc;
+        font-size: 1.6rem;
+    }

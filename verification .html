@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/verification .css">
+
+</head>
+
+<body>
+    <div class="head">
+        <img src="./image/index/logo.jpg" alt="">
+        <img src="./image/my/my.jpg" alt="">
+        <img src="./image/my/xiazai.jpg" alt="">
+    </div>
+    <div class="head-top">
+        <span>首页</span>
+        <span>>我的</span>
+        <span>>登录</span>
+    </div>
+    <ul class="btn">
+        <li class="active">普通登录</li>
+        <li>验证码快捷登录</li>
+    </ul>
+    <div class="carrd">
+        <ul class="list scd">
+            <li>
+                <input type="text" placeholder="请输入手机号码">
+            </li>
+            <li>
+                <input type="text" placeholder="请输入密码">
+            </li>
+            <button class="btn2">立即登录</button>
+            <ol>
+                <li>
+                    <a href="register.html">立即注册</a>
+                </li>
+                <li>
+                    <a href="forget.html">忘记密码</a>
+                </li>
+            </ol>
+        </ul>
+        <ul class="list" style="display: none;">
+            <li>
+                <input type="text" placeholder="请输入手机号码">
+                <button class="btn1">发送验证码</button>
+            </li>
+            <li>
+                <input type="text" placeholder="请输入短信中的验证码">
+            </li>
+            <button class="btn2">验证并登录</button>
+            <ol>
+                <li>
+                    <a href="register.html">立即注册</a>
+                </li>
+                <li>
+                    <a href="forget.html">忘记密码</a>
+                </li>
+            </ol>
+        </ul>
+    </div>
+</body>
+<script src="./js/zepto.js"></script>
+<script src="./js/touch.js"></script>
+<script>
+    function setRem() {
+        var windw = document.documentElement.clientWidth || document.body.clientWidth;
+        var uiw = 320;
+        document.documentElement.style.fontSize = (windw / uiw) * 10 + 'px'
+    }
+    setRem();
+    window.onresize = setRem;
+
+    $(".btn li").on("click", function() {
+        $(this).addClass("active").siblings().removeClass("active")
+        if ($(this).hasClass("active")) {
+            $(".carrd ul").eq($(this).index()).show();
+            $(".carrd ul").eq($(this).index()).siblings().hide();
+        }
+    })
+
+
+
+    var num = 59;
+    var timer = null;
+    $(".btn1").tap(function() {
+        $(".btn1").css("pointerEvents", "none");
+        timer = setInterval(function() {
+            if (num >= 0) {
+                $(".btn1").css("color", "#ccc");
+                $(".btn1").text(num + '秒后重新发送');
+                num--;
+            } else {
+                $(".btn1").css("color", "black")
+                $(".btn1").text('重新发送');
+                $(".btn1").css('pointerEvents', "auto");
+                clearInterval(timer);
+                num = 59;
+            }
+        }, 1000)
+    });
+
+    $(".btn2").on("click", function() {
+        location = "Personal homepage.html"
+    })
+</script>
+<html>

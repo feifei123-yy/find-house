@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+html {
+    font-size: 10px;
+}
+
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+body {
+    background: #F5F5F5;
+}
+
+.head {
+    width: 100%;
+    height: 4rem;
+    background: #ff8a00;
+    box-sizing: border-box;
+    padding: 0.4rem 3rem 0 3rem;
+}
+
+.head img:nth-of-type(1) {
+    height: 80%;
+}
+
+.head img:nth-of-type(2) {
+    height: 80%;
+    margin-left: 11rem;
+}
+
+.head img:nth-of-type(3) {
+    height: 80%;
+    margin-left: 1rem;
+}
+
+.head-top {
+    width: 100%;
+    height: 4rem;
+    background: white;
+    line-height: 4rem;
+    border-bottom: .1rem solid #ccc;
+}
+
+.head-top span:nth-child(1) {
+    margin-left: 1rem;
+    font-size: 1.1rem;
+    color: black;
+    font-weight: bolder;
+}
+
+.header .title .box p {
+    color: #fff;
+}
+
+.logo {
+    background: url(../素材/image/my/bg2.png)no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 14rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-box {
+    width: 7rem;
+}
+
+.logo img {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo-box p {
+    color: white;
+    text-align: center;
+    margin-left: -6rem;
+    padding: 2rem;
+    width: 14rem;
+}
+
+.list {
+    width: 100%;
+}
+
+.list>li {
+    background-color: white;
+    width: 100%;
+    padding: 1.5rem 0;
+    display: flex;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.right {
+    width: 1rem;
+    margin-right: 1.2rem
+}
+
+.list>li span {
+    margin-left: 1rem;
+    display: flex;
+    flex-grow: 1;
+    font-size: 1.2rem;
+    color: #666666;
+}
+
+button {
+    width: 30.1rem;
+    height: 4.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 1rem;
+    background: #FFFFFF;
+    color: #FF8A00;
+    outline: none;
+    border: .1rem solid #ccc;
+}

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+    <script src=""></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul,
+        li {
+            list-style: none;
+        }
+
+        html {
+            font-size: 100px;
+            background-color: rgba(204, 204, 204, 0.428);
+            box-sizing: border-box;
+        }
+
+        .tou {
+            font-size: 0;
+            width: 3.2rem;
+            height: .45rem;
+            background-color: #ff8a00;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .tou>img {
+            height: .3rem;
+        }
+
+        .tou>ul {
+            width: 1.2rem;
+            height: 100%;
+            display: flex;
+
+        }
+
+        .tou>ul>li {
+            width: 40%;
+            font-size: .1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .tou>ul>li>img {
+            width: .15rem;
+            height: .15rem;
+        }
+
+        .zho_7 {
+            width: 100%;
+            padding: .15rem;
+            padding-bottom: 0;
+            font-size: 0;
+            box-sizing: border-box;
+            background-color: black;
+            margin-bottom: 0;
+        }
+
+        .zho_7>p {
+            font-size: .18rem;
+            color: gray;
+            padding-bottom: .2rem;
+            border-bottom: .01rem solid gray;
+        }
+
+        .zho_7>ul {
+            width: 100%;
+            margin-top: .2rem;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .zho_7>ul>li {
+            width: 1.2rem;
+            height: .3rem;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .zho_7>ul>li>img {
+            width: .2rem;
+            height: 0.22rem;
+        }
+
+        .zho_7>ul>li>div {
+            width: .5rem;
+            font-size: .12rem;
+            color: gray;
+        }
+
+        .zho_7>div {
+            margin-top: .2rem;
+            font-size: .12rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            color: gray;
+        }
+
+        .lie {
+            box-sizing: border-box;
+            font-size: 0;
+            width: 100%;
+            height: .3rem;
+            background-color: white;
+            line-height: .3rem;
+            padding-left: .2rem;
+        }
+
+        .lie>p {
+            font-size: .13rem;
+        }
+
+        .lie>p>span {
+            font-weight: bold;
+        }
+
+        .fang {
+            font-size: 0;
+        }
+
+        .fang>div {
+            box-sizing: border-box;
+            width: 100%;
+            height: 1.3rem;
+            padding: .2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: .01rem solid tomato;
+        }
+
+        .fang>div>img {
+            width: .8rem;
+            height: .8rem;
+        }
+
+        .fang>div>ul {
+            width: 1.9rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        .fang>div>ul>li:first-child {
+            font-size: .15rem;
+            font-weight: bold;
+            margin-bottom: .05rem;
+        }
+
+        .fang>div>ul>li:nth-of-type(2) {
+            font-size: .13rem;
+        }
+
+        .fang>div>ul>li:nth-of-type(3) {
+            font-size: .12rem;
+            color: gray;
+            margin-bottom: .04rem;
+        }
+
+        .fang>div>ul>li:nth-of-type(3)>span {
+            color: tomato;
+        }
+
+        .fang>div>ul>li:nth-of-type(4) {
+            font-size: .13rem;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .fang>div>ul>li:nth-of-type(4)>div {
+            padding: .05rem;
+        }
+
+        .fang>div>ul>li:nth-of-type(4)>span {
+            color: tomato;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tou">
+        <img src="../image/index/logo.jpg" alt="">
+        <ul>
+            <li>
+                <img src="../image/SecondHandList/user.png" alt="">
+                我的
+            </li>
+            <li>
+                <img src="../image/SecondHandList/user.png" alt="">
+                下载
+            </li>
+        </ul>
+    </div>
+    <div class="lie">
+        <p> <span>首页</span> >我的>我关注的小区</p>
+    </div>
+    <div class="fang">
+        <div>
+            <img src="../image/index/img2.png" alt="">
+            <ul>
+                <li>南沙滩小区 超低价急售</li>
+                <li>2室1厅 96m 南北</li>
+                <li>青岛新天地</li>
+                <li>
+                    <div>集中供暖</div>
+                    <span>3000元/月</span>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <img src="../image/index/img2.png" alt="">
+            <ul>
+                <li>南沙滩小区 超低价急售</li>
+                <li>2室1厅 96m 南北</li>
+                <li>青岛新天地</li>
+                <li>
+                    <div>集中供暖</div>
+                    <span>3000元/月</span>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <img src="../image/index/img2.png" alt="">
+            <ul>
+                <li>南沙滩小区 超低价急售</li>
+                <li>2室1厅 96m 南北</li>
+                <li>青岛新天地</li>
+                <li>
+                    <div>集中供暖</div>
+                    <span>3000元/月</span>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <img src="../image/index/img2.png" alt="">
+            <ul>
+                <li>南沙滩小区 超低价急售</li>
+                <li>2室1厅 96m 南北</li>
+                <li>青岛新天地</li>
+                <li>
+                    <div>集中供暖</div>
+                    <span>3000元/月</span>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <img src="../image/index/img2.png" alt="">
+            <ul>
+                <li>南沙滩小区 超低价急售</li>
+                <li>2室1厅 96m 南北</li>
+                <li>青岛新天地</li>
+                <li>
+                    <div>集中供暖</div>
+                    <span>3000元/月</span>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <img src="../image/index/img2.png" alt="">
+            <ul>
+                <li>南沙滩小区 超低价急售</li>
+                <li>2室1厅 96m 南北</li>
+                <li>青岛新天地</li>
+                <li>
+                    <div>集中供暖</div>
+                    <span>3000元/月</span>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <img src="../image/index/img2.png" alt="">
+            <ul>
+                <li>南沙滩小区 超低价急售</li>
+                <li>2室1厅 96m 南北</li>
+                <li>青岛新天地</li>
+                <li>
+                    <div>集中供暖</div>
+                    <span>3000元/月</span>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="zho_7">
+        <p>北京找房无忧 > 首页</p>
+        <ul>
+            <li>
+                <img src="../image/index/apple.png" alt="">
+                <div>
+                    <span>iphone</span>
+                    <span>客户端</span>
+                </div>
+
+            </li>
+            <li>
+                <img src="../image/index/android.png" alt="">
+                <div>
+                    <span>iphone</span>
+                    <span>客户端</span>
+                </div>
+            </li>
+        </ul>
+        <div>
+            <span>北京找房无忧房地产经纪公司</span>
+            <span>网络经营许可证京ICP备20160812号</span>
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+</body>
+<script>
+    window.onload = function () {
+        function setRem() {
+            var ui_w = 320;
+            var c_w = document.documentElement.clientWidth || document.body.clientWidth;
+            document.getElementsByTagName('html')[0].style.fontSize = (c_w / ui_w) * 100 + 'px';
+        }
+        setRem();
+        window.onresize = setRem;
+    }
+</script>
+
+</html>
